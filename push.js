@@ -17,25 +17,31 @@ function pushTest(n) {
     const arr = [];
 
     for (let i = 0; i < n; i++) {
+
         arr.push(i);
+
     }
 
     return arr;
 }
 
-let n = 2000000;
+let n = 100000;
 let startT = Date.now()
 pushTest(n);
 let endT = Date.now()
 console.log(`${endT - startT}ms `);
 
 //time complexity: o(n)
-//space complexity: o(1)
+//space complexity: o(n)
 
-//n = 100000, 5ms
-//n = 200000, 10ms
-//n = 500000, 15ms
-//n = 750000, 20ms
-//n = 1000000, 26ms
-//n = 1500000, 37ms
-//n = 2000000, 64ms
+//n = 100000, 3ms
+//n = 200000, 3ms
+//n = 500000, 6ms
+//n = 750000, 8ms
+//n = 1000000, 10ms
+//n = 1500000, 15ms
+//n = 2000000, 19ms
+//n = 3000000, 37ms
+//n = 4000000, 37ms
+//n = 8000000, 71ms
+//n = 10000000, 95ms
