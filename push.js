@@ -23,8 +23,19 @@ function pushTest(n) {
     return arr;
 }
 
-let n = 100;
+let n = 2000000;
 let startT = Date.now()
 pushTest(n);
 let endT = Date.now()
 console.log(`${endT - startT}ms `);
+
+//time complexity: o(n)
+//space complexity: o(1)
+
+//n = 100000, 5ms
+//n = 200000, 10ms
+//n = 500000, 15ms
+//n = 750000, 20ms
+//n = 1000000, 26ms
+//n = 1500000, 37ms
+//n = 2000000, 64ms
