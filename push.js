@@ -31,8 +31,13 @@ pushTest(n);
 let endT = Date.now()
 console.log(`${endT - startT}ms `);
 
+//pushTest(n)
 //time complexity: o(n)
 //space complexity: o(n)
+
+//arr.push()
+//time complexity: o(1)
+//space complexity: o(1)
 
 //n = 100000, 3ms
 //n = 200000, 3ms
